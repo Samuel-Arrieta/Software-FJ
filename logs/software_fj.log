@@ -1,0 +1,39 @@
+2026-11-18 21:03:01,848 | INFO     | === Inicio de simulación Software FJ ===
+2026-11-18 21:03:01,848 | INFO     | Operación 01 (Registrar cliente válido (Ana)) exitosa.
+2026-11-18 21:03:01,848 | ERROR    | Operación 02 (Registrar cliente con correo inválido) falló: Correo inválido: 'luis-correo'.
+2026-11-18 21:03:01,848 | INFO     | Operación 03 (Registrar cliente válido (Luis)) exitosa.
+2026-11-18 21:03:01,849 | ERROR    | Operación 04 (Registrar cliente con documento no numérico) falló: El documento debe ser numérico (6 a 12 dígitos).
+2026-11-18 21:03:01,849 | INFO     | Operación 05 (Crear sala de reuniones válida) exitosa.
+2026-11-18 21:03:01,849 | ERROR    | Operación 06 (Crear servicio con tarifa negativa) falló: La tarifa por hora debe ser un número positivo.
+2026-11-18 21:03:01,849 | INFO     | Operación 07 (Crear alquiler de equipo válido) exitosa.
+2026-11-18 21:03:01,849 | INFO     | Operación 08 (Crear asesoría válida) exitosa.
+2026-11-18 21:03:01,849 | INFO     | Operación 09 (Reserva exitosa (Ana - Sala, 3 h)) exitosa.
+2026-11-18 21:03:01,849 | ERROR    | Operación 10 (Reserva con duración inválida (30 h)) falló: La duración debe estar entre 0 y 12 horas.
+2026-11-18 21:03:01,849 | ERROR    | Operación 11 (Reserva de servicio no disponible) falló: 'Portátiles' no está disponible.
+2026-11-18 21:03:01,849 | INFO     | Operación 12 (Reserva exitosa (Luis - Asesoría, 2 h)) exitosa.
+2026-11-18 21:03:01,849 | INFO     | Reserva #9 confirmada. Total: $214,200.00
+2026-11-18 21:03:01,849 | INFO     | Intento de confirmación procesado para reserva #9
+2026-11-18 21:03:01,849 | INFO     | Operación 13 (Confirmar reserva de Ana) exitosa.
+2026-11-18 21:03:01,849 | ERROR    | Fallo al confirmar reserva #9: Solo se confirman reservas pendientes (estado: Confirmada).
+2026-11-18 21:03:01,849 | INFO     | Intento de confirmación procesado para reserva #9
+2026-11-18 21:03:01,849 | ERROR    | Operación 14 (Confirmar de nuevo (estado inválido)) falló: Solo se confirman reservas pendientes (estado: Confirmada).
+2026-11-18 21:03:01,849 | INFO     | Operación 15 (Costo asesoría: solo horas) exitosa.
+2026-11-18 21:03:01,849 | INFO     | Operación 16 (Costo asesoría: IVA 19% + descuento 10%) exitosa.
+2026-11-18 21:03:01,849 | INFO     | Operación 17 (Descuento fijo ($20.000) con singledispatch) exitosa.
+2026-11-18 21:03:01,849 | INFO     | Operación 18 (Descuento por texto ('15%')) exitosa.
+2026-11-18 21:03:01,849 | ERROR    | Operación 19 (Descuento de tipo no soportado) falló: Tipo de descuento no soportado: list
+2026-11-18 21:03:01,849 | INFO     | Reserva #12 cancelada.
+2026-11-18 21:03:01,849 | INFO     | Operación 20 (Cancelar reserva de Luis) exitosa.
+2026-11-18 21:03:01,850 | ERROR    | Fallo al cancelar reserva #12: No se puede cancelar una reserva Cancelada.
+2026-11-18 21:03:01,850 | ERROR    | Operación 21 (Cancelar de nuevo (operación no permitida)) falló: No se puede cancelar una reserva Cancelada.
+2026-11-18 21:03:01,850 | ERROR    | Operación 22 (Registrar cliente con parámetros faltantes) falló: Faltan parámetros para registrar el cliente.
+2026-11-18 21:03:01,850 | ERROR    | Operación 23 (Cálculo inconsistente (impuesto 150%)) falló: Impuesto y descuento deben estar entre 0 y 1.
+2026-11-18 21:03:01,850 | ERROR    | Operación 24 (Crear asesoría con nivel inexistente) falló: Nivel 'maestro' no válido: ['junior', 'senior', 'experto'].
+2026-11-18 21:03:01,850 | INFO     | Operación 25 (Reserva exitosa (Ana - Sala, 1 h)) exitosa.
+2026-11-18 21:03:01,850 | INFO     | Reserva #14 confirmada. Total: $71,400.00
+2026-11-18 21:03:01,850 | INFO     | Intento de confirmación procesado para reserva #14
+2026-11-18 21:03:01,850 | INFO     | Reserva #14 procesada y completada.
+2026-11-18 21:03:01,850 | INFO     | Operación 26 (Procesar reserva completa (confirmar + completar)) exitosa.
+2026-11-18 21:03:01,850 | ERROR    | Operación 27 (Procesar reserva ya completada) falló: No se puede procesar una reserva Completada.
+2026-11-18 21:03:01,850 | ERROR    | Operación 28 (Reserva con cliente inexistente (None)) falló: La reserva requiere un cliente válido.
+2026-11-18 21:03:01,850 | INFO     | === Fin de simulación: sistema estable ===
