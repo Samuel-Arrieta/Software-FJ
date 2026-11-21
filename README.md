@@ -44,5 +44,5 @@ Al ejecutarse, el programa simula 28 operaciones (válidas e inválidas), muestr
 
 ## Autor
 
-Grupo:213023_47 
+Grupo: 213023_47 
 Samuel David Arrieta Rios
